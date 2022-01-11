@@ -1,0 +1,8 @@
+
+add_executable(hashtable # name of the executable on Windows will be example.exe 
+    main.c 
+    int_vector.h
+    int_vector.c
+    hash_table.h
+    hash_table.c
+    )
