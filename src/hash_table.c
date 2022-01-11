@@ -49,13 +49,6 @@ void free_hashtable(hashtable *table)
     free(table);
 }
 
-//not finished
-void init_hashtable(hashtable table, size_t init_size)
-{
-    table.cap = init_size;
-    table.size = 0;
-}
-
 size_t hash(hashtable *table, int key){
     const double c = 0.618033;
     double kc = key * c;
@@ -100,14 +93,6 @@ bool resize(hashtable * table){
 
 bool insert_hashtable(hashtable *table, int key)
 {
-    /*
-     check if size == cap-1
-     copy ints into array[cap] and free vectors
-     realloc hahtable * and initialize
-     copy ints back into hashtable *
-     */
-    
-    
     if(table->size == table->cap)
         if (!resize(table))
             return false;

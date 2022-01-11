@@ -11,19 +11,10 @@
 #include <stdio.h>
 #include "int_vector.h"
 
-/*
-typedef struct{
-    int_vector *ptr;
-    size_t cap;
-    size_t size;
-}hashtable;
-*/
 typedef struct HashTable hashtable;
 
 //needs to be freed from heap
 hashtable* new_hashtable(size_t);
-//not finished
-void init_hashtable(hashtable, size_t);
 //frees hashtable off of heap
 void free_hashtable(hashtable *);
 bool insert_hashtable(hashtable *, int);

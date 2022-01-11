@@ -12,16 +12,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-//const size_t increment;
-/*
-typedef struct
-{
-    size_t space_left;
-    size_t size;
-    int *ptr;
-}int_vector;
-*/
-
 typedef struct Int_Vector int_vector;
 
 int_vector* new_int_vector(size_t );
